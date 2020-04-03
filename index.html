@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>~~lists~~</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>Browser Template</h1>
-    </body>
+    <!-- Do not add `script` tags-->
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+
+    <h1>Welcome to the Lists!</h1>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Sign-up!
+        </button>
+        <div class="dropdown-menu">
+          <form id="sign-up" class="border">
+            <fieldset>
+              <input type="email" name="credentials[email]" placeholder="Email">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="password" name="credentials[password_confirmation]" placeholder="Confirm password">
+              <input type="submit" value="Sign up!">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sign-in!
+        </button>
+        <div class="dropdown-menu">
+         <form id="sign-in" class="border">
+           <fieldset>
+             <input type="email" name="credentials[email]" placeholder="Email">
+             <input type="password" name="credentials[password]" placeholder="Password">
+             <input type="submit" value="Sign in!">
+           </fieldset>
+         </form>
+       </div>
+     </div>
+
+  <!-- <div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Sign-up!
+    </button>
+    <div class="dropdown-menu">
+      <form  id="sign-up" class="px-4 py-3">
+        <div class="form-group">
+          <label for="exampleDropdownFormEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleDropdownFormPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+          <label for="exampleDropdownFormPassword1">Confirmation</label>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sign-in!
+    </button>
+    <div class="dropdown-menu">
+      <form id="sign-in" class="px-4 py-3">
+        <fieldset>
+           <label>Email address</label>
+           <input type="email" class="form-control" placeholder="email@example.com">
+           <label>Password</label>
+           <input type="password" class="form-control" placeholder="Password">
+         <button type="submit" class="btn btn-primary" value="Sign in!">Sign in</button>
+        </fieldset>
+      </form>
+    </div>
+   </div> -->
+   <div class="hide alert alert-success" role="alert">
+   A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+   </div>
+   <div class="hide alert alert-danger" role="alert">
+   A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+   </div>
+   <nav aria-label="breadcrumb">
+    <ol class="breadcrumb hide" >
+     <li id=all-items class="breadcrumb-item"><a href="#">All Items</a></li>
+     <li id="create-item" class="breadcrumb-item"><a href="#">Create Item</a></li>
+     <li id="change-password" class="breadcrumb-item"><a href="#">Change Password</a></li>
+    </ol>
+   </nav>
+   <p class="items-list"> </p>
+  </body>
 </html>

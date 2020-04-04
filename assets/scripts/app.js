@@ -2,7 +2,7 @@
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
-const events = require('./list_items/events.js')
+const events = require('./auth/events.js')
 // use require without a reference to ensure a file is bundled
 // require('./example')
 
@@ -12,6 +12,12 @@ $(() => {
 
   // sign in for registered user.
   $('#sign-in').on('submit', events.onSignIn)
+
+  // sign out for signed-in user.
+  $('#sign-out').on('click', events.onSignOut)
+
+  // change password for registered user.
+  $('#change-password').on('submit', events.onChangePassword)
 
   // show the all items lists
   $('#all-items').on('click', events.onShowItems)

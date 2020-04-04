@@ -21,8 +21,28 @@ const signIn = function (data) {
   })
 }
 
+const signOut = function () {
+  return $.ajax({
+    url: config.apiUrl + '/sign-out',
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
+const changePassword = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/change-password',
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
 const showItems = function () {
-  // console.log('HOP!')
   return $.ajax({
     url: config.apiUrl + '/list_items',
     method: 'GET',
@@ -35,5 +55,7 @@ const showItems = function () {
 module.exports = {
   signUp,
   signIn,
+  signOut,
+  changePassword,
   showItems
 }

@@ -42,20 +42,9 @@ const changePassword = function (data) {
   })
 }
 
-const showItems = function () {
-  return $.ajax({
-    url: config.apiUrl + '/list_items',
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword,
-  showItems
+  changePassword
 }

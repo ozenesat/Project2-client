@@ -17,12 +17,10 @@ const signUpFailure = function () {
 const signInSuccess = function (data) {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Signed-in Successfully!')
-  $('#it').removeClass('hide')
   $('#sign-out').removeClass('hide')
   $('#cpb').removeClass('hide')
   $('#sub').addClass('hide')
   $('#sib').addClass('hide')
-  $('#it').addClass('hide')
   $('.breadcrumb').removeClass('hide')
   store.user = data.user
   document.getElementById('sign-in').reset()
@@ -38,7 +36,7 @@ const signOutSuccess = function () {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Signed-out Successfully!')
   $('.breadcrumb').addClass('hide')
-  $('#it').addClass('hide')
+  $('#content').addClass('hide')
   $('#sign-out').addClass('hide')
   $('#cpb').addClass('hide')
   $('#sub').removeClass('hide')
@@ -62,26 +60,6 @@ const changePasswordFailure = function () {
   document.getElementById('change-password').reset()
 }
 
-const showItemsSuccess = function (data) {
-  $('.alert-success').removeClass('hide')
-  $('.alert-success').text('Items showing Successfully!')
-  $('#it').removeClass('hide')
-  $('#it').text(' ')
-
-  for (let i = 0; i < data.list_items.length; i++) {
-    $('#it').append('<li>  list title is "' + `${data.list_items[i].title}` + '" </li>')
-    $('#it').append('<li>  list description is "' + `${data.list_items[i].description}` + '" </li>')
-    $('#it').append('<li>  list due date is "' + `${data.list_items[i].due_on}` + '" </li>')
-    $('#it').append('<li>  list complete status is "' + `${data.list_items[i].completed}` + '" </li>')
-    $('#it').append('<br>')
-  }
-}
-
-const showItemsFailure = function () {
-  $('.alert-danger').removeClass('hide')
-  $('.alert-danger').text('Error showing items!')
-}
-
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -90,7 +68,5 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   changePasswordSuccess,
-  changePasswordFailure,
-  showItemsSuccess,
-  showItemsFailure
+  changePasswordFailure
 }

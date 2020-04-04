@@ -23,6 +23,7 @@ const onSignIn = function (event) {
     .catch(ui.signInFailure)
 }
 
+// signs out the signed-in user.
 const onSignOut = function () {
   event.preventDefault()
   api.signOut()
@@ -40,13 +41,6 @@ const onChangePassword = function (event) {
     .catch(ui.changePasswordFailure)
 }
 
-const onShowItems = function () {
-  event.preventDefault()
-  api.showItems()
-    .then(ui.showItemsSuccess)
-    .catch(ui.showItemsFailure)
-}
-
 // clear the user feedbacks.
 const clear = function () {
   $('.alert-danger').addClass('hide')
@@ -58,6 +52,5 @@ module.exports = {
   onSignIn,
   onSignOut,
   onChangePassword,
-  onShowItems,
   clear
 }

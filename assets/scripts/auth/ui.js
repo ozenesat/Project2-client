@@ -41,6 +41,7 @@ const signOutSuccess = function () {
   $('#cpb').addClass('hide')
   $('#sub').removeClass('hide')
   $('#sib').removeClass('hide')
+  $('#create-item').addClass('hide')
 }
 
 const signOutFailure = function () {

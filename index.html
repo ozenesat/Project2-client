@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>~~lists~~</title>
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Do not add `link` tags-->
@@ -86,6 +87,14 @@
         </button>
      </div>
 
+    <!-- !!! List Items !!!-->
+    <nav aria-label="breadcrumb">
+     <ul class="breadcrumb hide" style="list-style-type:none;" >
+      <li id="all-items" class="breadcrumb-item">All Items</li>
+      <li id="cib" class="breadcrumb-item">Create Items</li>
+     </ul>
+    </nav>
+
     <!-- !!! Create Items form !!!-->
     <form id="create-item" class="px-4 py-3 hide">
       <div class="form-group">
@@ -107,24 +116,18 @@
        <button type="submit" class="btn btn-primary" value="Create-Item!">Create Item!</button>
     </form>
 
-    <!-- !!! List Items !!!-->
-     <nav aria-label="breadcrumb">
-      <ul class="breadcrumb hide" style="list-style-type:none;" >
-       <li id="all-items" class="breadcrumb-item"><a href="#">All Items</a></li>
-       <li id="cib" class="breadcrumb-item"><a href="#">Create Item</a></li>
-       </ul>
        <!-- !!! Alerts !!!-->
-        <div class="hide alert alert-success" role="alert">
-        A simple success alert <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-        <div class="hide alert alert-danger" role="alert">
-        A simple danger alert <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-        </div>
-     </nav>
+     <div class="hide alert alert-success" role="alert">
+     A simple success alert
+     </div>
+     <div class="hide alert alert-danger" role="alert">
+     A simple danger alert
+     </div>
+
 
 
    <main>
-      <div id="content" class="content"></div>
+      <div id="content" class="content hide"></div>
    </main>
   </body>
 </html>

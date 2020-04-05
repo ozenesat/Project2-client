@@ -1,9 +1,53 @@
 @import '~bootstrap/scss/bootstrap';
 
-.hide  {
-  display: none;
+body {
+  background-image: url('https://pbs.twimg.com/media/DgJrYUEUcAA4nt-?format=jpg&name=4096x4096');
+  background-size: cover;
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
 }
 
-li {
-  list-style-type: none;
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  opacity: .75;
+}
+
+label {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(1, 10, 90, .65);
+}
+
+.px-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+section {
+  background-color: #ffffff;
+  border: 6px solid rgba(1, 10, 90, .6);
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px;
+  opacity: .75;
+  outline: none;
+  padding: 1rem;
+}
+
+.hide  {
+  display: none;
 }

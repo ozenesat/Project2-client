@@ -24,7 +24,42 @@ const createItem = function (data) {
   })
 }
 
+const deleteItem = function (id) {
+  // console.log(data)
+  return $.ajax({
+    url: config.apiUrl + '/list_items/' + id,
+    method: 'delete',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
+const updateItem = function (id, data) {
+  return $.ajax({
+    url: config.apiUrl + '/list_items/' + id,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+// const updateMealPlan = (id, data) => {
+//   return $.ajax({
+//     url: config.apiUrl + '/meal_plans/' + id,
+//     method: 'PATCH',
+//     headers: {
+//       Authorization: 'Token token=' + store.user.token
+//     },
+//     data
+//   })
+// }
+
 module.exports = {
   showItems,
-  createItem
+  createItem,
+  deleteItem,
+  updateItem
 }

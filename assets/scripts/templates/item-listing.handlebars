@@ -1,6 +1,6 @@
 {{#each list_items as |item|}}
   {{log item}}
-  <section data-id="{{item.id}}">
+  <section id="item{{item.id}}" data-id="{{item.id}}">
     <h3>Item Title: {{limit item.title 15}}</h3>
     <ul>
       <li>Item Description: {{#if item.description}}
@@ -19,6 +19,8 @@
       No complete status provided.
     {{/if}}</li>
   </ul>
+  <button data-id="{{item.id}}" class='btn btn-success'> Update Item </button>
+  <button data-id="{{item.id}}" class='btn btn-danger'> Delete Item </button>
   </section>
 
 {{/each}}

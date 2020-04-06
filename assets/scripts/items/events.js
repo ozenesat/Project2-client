@@ -14,7 +14,6 @@ const onShowItems = function (event) {
 const onCreateItem = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  // console.log(data)
   api.createItem(data)
     .then(ui.createItemSuccess)
     .catch(ui.failure)
@@ -37,22 +36,12 @@ const onUpdateItemButton = function (event) {
 
 const onUpdateItem = function (event) {
   event.preventDefault()
-  console.log('HEY!')
   const id = $(event.target).data('id')
   const data = getFormFields(event.target)
   api.updateItem(id, data)
     .then(ui.updateItemSuccess)
     .catch(ui.failure)
 }
-
-// const onUpdateMealPlan = event => {
-//   event.preventDefault()
-//   const id = $(event.target).data('id')
-//   const data = getFormFields(event.target)
-//   api.updateMealPlan(id, data)
-//     .then(ui.updateMealPlanSuccess)
-//     .catch(ui.updateMealPlanFailure)
-// }
 
 const addHandlers = () => {
   $('#all-items').on('click', onShowItems)

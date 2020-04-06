@@ -25,7 +25,6 @@ const createItem = function (data) {
 }
 
 const deleteItem = function (id) {
-  // console.log(data)
   return $.ajax({
     url: config.apiUrl + '/list_items/' + id,
     method: 'delete',
@@ -45,17 +44,6 @@ const updateItem = function (id, data) {
     data
   })
 }
-
-// const updateMealPlan = (id, data) => {
-//   return $.ajax({
-//     url: config.apiUrl + '/meal_plans/' + id,
-//     method: 'PATCH',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     },
-//     data
-//   })
-// }
 
 module.exports = {
   showItems,

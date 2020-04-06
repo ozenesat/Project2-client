@@ -31,10 +31,29 @@ label {
 }
 
 .px-4 {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   opacity: 1;
+}
+
+.alert {
+  text-align: center;
+  opacity: 0.72;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 22px;
+}
+
+.breadcrumb {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 18px;
+  opacity: 0.72;
+}
+
+.breadcrumb-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 section {

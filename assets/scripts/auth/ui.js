@@ -21,7 +21,7 @@ const signInSuccess = function (data) {
   $('#cpb').removeClass('hide')
   $('#sub').addClass('hide')
   $('#sib').addClass('hide')
-  $('.breadcrumb').removeClass('hide')
+  $('.item-group').removeClass('hide')
   store.user = data.user
   document.getElementById('sign-in').reset()
 }
@@ -35,7 +35,7 @@ const signInFailure = function () {
 const signOutSuccess = function () {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Signed-out Successfully!')
-  $('.breadcrumb').addClass('hide')
+  $('.item-group').addClass('hide')
   $('#content').addClass('hide')
   $('#sign-out').addClass('hide')
   $('#cpb').addClass('hide')

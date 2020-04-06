@@ -79,9 +79,22 @@
           Create New Item
         </button>
         <!-- !!! Sign-out button !!!-->
-            <button id="sign-out" class="btn-secondary btn-lg hide" type="submit">
-              Sign-out!
-            </button>
+        <button id="sign-out" class="btn-secondary btn-lg hide" type="submit">
+          Sign-out
+        </button>
+        <!-- !!! Change-password form & Bar !!!-->
+         <div id="cpb" class="btn-group hide">
+           <button class="btn-secondary btn-lg" type="button" aria-haspopup="true" aria-expanded="true">
+             Change Password
+           </button>
+             <form id="change-password" class="border hide">
+               <fieldset>
+                 <input type="password" name="passwords[old]" placeholder="Old Password">
+                 <input type="password" name="passwords[new]" placeholder="New Password">
+                 <input type="submit" value="Change password!">
+               </fieldset>
+             </form>
+         </div>
      </div>
 
 
@@ -112,25 +125,7 @@
       <div id="content" class="content hide"></div>
    </main>
 
-   <!-- !!! Change-password form & Bar !!!-->
-    <div id="cpb" class="btn-group hide">
-      <button class="btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Change Password!
-      </button>
-      <div class="dropdown-menu">
-        <form id="change-password" class="px-4 py-3">
-          <div class="form-group">
-            <label>Current Password</label>
-            <input type="password" name="passwords[old]" class="form-control" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label>New Password</label>
-            <input type="password" name="passwords[new]" class="form-control" placeholder="Password">
-          </div>
-           <button type="submit" class="btn btn-primary" value="Change Password!">Change password!</button>
-        </form>
-      </div>
-    </div>
+
 
   </body>
 </html>

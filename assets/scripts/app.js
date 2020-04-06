@@ -32,6 +32,9 @@ $(() => {
   // list_items' table related events.
   itemsEvents.addHandlers()
 
+  // opens the change password bar
+  $('#cpb').on('click', $('#change-password').removeClass('hide'))
+
   // opens the create item form bar.
   $('#cib').on('click', cib)
 })

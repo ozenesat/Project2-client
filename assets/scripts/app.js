@@ -29,6 +29,8 @@ $(() => {
   // clear the alerts from the page.
   $('body').on('click', authEvents.clear)
 
+  $('#cib').on('click', cib)
+
   // list_items' table related events.
   itemsEvents.addHandlers()
 })

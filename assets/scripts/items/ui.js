@@ -18,7 +18,7 @@ const showItemsSuccess = function (data) {
 
 const createItemSuccess = function (data) {
   $('.alert-success').removeClass('hide')
-  $('.alert-success').text('Item created Successfully!')
+  $('.alert-success').text('List created Successfully!')
   document.getElementById('create-item').reset()
 }
 

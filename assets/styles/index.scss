@@ -46,6 +46,19 @@ label {
   text-align: center;
 }
 
+.all {
+  z-index: 1;
+}
+
+.pass {
+  z-index: 2;
+}
+
+h5 {
+  font-family: 'Baloo Thambi 2', cursive;
+  text-align: center;
+}
+
 section {
   background-color: #ffffff;
   border: 6px solid rgba(1, 10, 90, .6);
@@ -55,14 +68,6 @@ section {
   opacity: .75;
   outline: none;
   padding: 1rem;
-}
-
-.dropleft {
-  z-index: 1;
-}
-
-.form-group {
-  z-index: 2;
 }
 
 .hide  {

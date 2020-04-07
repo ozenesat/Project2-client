@@ -19,8 +19,10 @@ const showItemsSuccess = function (data) {
 const createItemSuccess = function (data) {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Item created Successfully!')
+  $('#create-item').text('')
   document.getElementById('create-item').reset()
 }
+
 const failure = function (data) {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Uh! There is an error here! Please try again later :)')

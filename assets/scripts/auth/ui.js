@@ -22,6 +22,7 @@ const signInSuccess = function (data) {
   $('#sub').addClass('hide')
   $('#sib').addClass('hide')
   $('.item-group').removeClass('hide')
+  $('.info').addClass('hide')
   store.user = data.user
   document.getElementById('sign-in').reset()
 }
@@ -42,6 +43,7 @@ const signOutSuccess = function () {
   $('#sub').removeClass('hide')
   $('#sib').removeClass('hide')
   $('#create-item').addClass('hide')
+  $('.info').removeClass('hide')
 }
 
 const signOutFailure = function () {

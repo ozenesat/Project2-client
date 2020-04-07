@@ -1,19 +1,44 @@
 {{#each list_items as |item|}}
   {{log item}}
-  <section id="item{{item.id}}" data-id="{{item.id}}">
-    <h3>Item Title: {{limit item.title 15}}</h3>
+  <section id="item{{item.id}}" data-id="{{item.id}}" class="all">
+    <h2>List Title: {{limit item.title 15}}</h2>
     <ul>
-      <li>Item Description: {{#if item.description}}
+      <li>Description: {{#if item.description}}
       {{item.description}}
-    {{else}}
+     {{else}}
       No description provided.
     {{/if}}</li>
-    <li>Item Due date:{{#if item.due_on}}
+    <li>Item One: {{#if item.item1}}
+      {{item.item1}}
+     {{else}}
+     No item added yet.
+    {{/if}}</li>
+    <li>Item Two: {{#if item.item2}}
+      {{item.item2}}
+     {{else}}
+     No item added yet.
+    {{/if}}</li>
+    <li>Item Three: {{#if item.item3}}
+      {{item.item3}}
+     {{else}}
+     No item added yet.
+    {{/if}}</li>
+    <li>Item Four: {{#if item.item4}}
+      {{item.item4}}
+     {{else}}
+     No item added yet.
+    {{/if}}</li>
+    <li>Item Five: {{#if item.item5}}
+      {{item.item5}}
+     {{else}}
+     No item added yet.
+    {{/if}}</li>
+    <li>Due date:{{#if item.due_on}}
       {{item.due_on}}
     {{else}}
       No due date provided.
     {{/if}}</li>
-    <li>Item Complete status: {{#if item.completed}}
+    <li>Complete status: {{#if item.completed}}
       {{item.completed}}
     {{else}}
       No complete status provided.

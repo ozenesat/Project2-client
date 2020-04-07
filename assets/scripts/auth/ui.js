@@ -2,6 +2,8 @@
 
 const store = require('../store')
 
+// Lovely ui codes which are related with their names.
+
 const signUpSuccess = function () {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Signed-up Successfully!')

@@ -3,6 +3,10 @@
 const config = require('../config')
 const store = require('../store.js')
 
+// Lovely api codes which are related with their names but bec. of an last
+// update Items means lists here.
+
+// Shows all the lists of signed-in user.
 const showItems = function () {
   return $.ajax({
     url: config.apiUrl + '/list_items',
@@ -13,6 +17,7 @@ const showItems = function () {
   })
 }
 
+// Creates new list for signed-in user.
 const createItem = function (data) {
   return $.ajax({
     url: config.apiUrl + '/list_items',
@@ -24,6 +29,7 @@ const createItem = function (data) {
   })
 }
 
+// Deletes the created List of signed-in user.
 const deleteItem = function (id) {
   return $.ajax({
     url: config.apiUrl + '/list_items/' + id,
@@ -34,6 +40,7 @@ const deleteItem = function (id) {
   })
 }
 
+// Updates the created List of signed-in user.
 const updateItem = function (id, data) {
   return $.ajax({
     url: config.apiUrl + '/list_items/' + id,

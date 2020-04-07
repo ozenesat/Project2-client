@@ -3,8 +3,9 @@
 const config = require('../config')
 const store = require('../store.js')
 
+// lovely api ajax requests related with their names.
+
 const signUp = function (data) {
-  // console.log('data is ', data)
   return $.ajax({
     url: config.apiUrl + '/sign-up',
     method: 'POST',
@@ -13,7 +14,6 @@ const signUp = function (data) {
 }
 
 const signIn = function (data) {
-  // console.log('data is ', data)
   return $.ajax({
     url: config.apiUrl + '/sign-in',
     method: 'POST',

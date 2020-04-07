@@ -1,13 +1,9 @@
 'use strict'
 
-// use require with a reference to bundle the file and use it in this file
-// const example = require('./example')
 const authEvents = require('./auth/events.js')
 const itemsEvents = require('./items/events.js')
 
-// use require without a reference to ensure a file is bundled
-// require('./example')
-
+// Pops up the create list form.
 const cib = function () {
   $('#create-item').removeClass('hide')
   $('#content').addClass('hide')
@@ -29,6 +25,7 @@ $(() => {
   // clear the alerts from the page.
   $('body').on('click', authEvents.clear)
 
+  // load the create list form.
   $('#cib').on('click', cib)
 
   // list_items' table related events.

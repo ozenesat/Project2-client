@@ -46,12 +46,8 @@ label {
   text-align: center;
 }
 
-.all {
-  z-index: 1;
-}
-
-.pass {
-  z-index: 2;
+.breadcrumb.item-group {
+ z-index: 1
 }
 
 h5 {
@@ -72,4 +68,23 @@ section {
 
 .hide  {
   display: none;
+}
+
+footer {
+  background-color: #6a675a;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 19px;
+  height: 50px;
+  opacity: .75;
+}
+
+.personal {
+  float: right;
+  margin-right: 2%;
+}
+
+.photo-credit {
+  float: left;
+  margin-left: 2%;
 }

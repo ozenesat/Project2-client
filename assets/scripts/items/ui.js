@@ -26,6 +26,7 @@ const createItemSuccess = function (data) {
 const failure = function (data) {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Uh! There is an error here! Please try again later :)')
+  document.getElementById('create-item').reset()
 }
 
 const showUpdateItemBar = function (id) {

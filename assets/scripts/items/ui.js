@@ -19,7 +19,7 @@ const showItemsSuccess = function (data) {
 const createItemSuccess = function (data) {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Item created Successfully!')
-  $('#create-item').text('')
+  // $('#create-item').text('')
   document.getElementById('create-item').reset()
 }
 

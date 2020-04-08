@@ -81,7 +81,6 @@ footer {
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 19px;
-  height: 50px;
   left: 0;
   margin-bottom: 0;
   opacity: .75;
@@ -97,4 +96,10 @@ footer {
 .photo-credit {
   float: left;
   margin-left: 2%;
+}
+
+@media (max-width: 770px) {
+  footer {
+    position: relative;
+}
 }

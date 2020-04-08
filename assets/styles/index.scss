@@ -52,7 +52,7 @@ label {
 }
 
 .breadcrumb.item-group {
- z-index: 1
+  z-index: 1;
 }
 
 h5 {
@@ -77,11 +77,16 @@ section {
 
 footer {
   background-color: #6a675a;
+  bottom: 0;
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 19px;
   height: 50px;
+  left: 0;
+  margin-bottom: 0;
   opacity: .75;
+  position: fixed;
+  right: 0;
 }
 
 .personal {

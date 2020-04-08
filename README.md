@@ -42,12 +42,12 @@ Finally, I tested all functionalities and fixed the errors. Also, I added some s
  ------------------------
 
 # Wireframe
-<img src="https://imgur.com/a/zvUiQgU" width="250">
+<img src="https://i.imgur.com/2P9OPMp.png" width="250">
 
 --------------------------
 
 # Entity Relationship Diagram (ERD)
-<img src="https://www.autodraw.com/share/IXFAGBEWMTQP" width="250">
+<img src="https://i.imgur.com/gE7uIqQ.png" width="250">
 
 ---------------------------
 

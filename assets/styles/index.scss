@@ -7,6 +7,11 @@ body {
   padding: 5rem 0 1rem;
 }
 
+section {
+  overflow: auto;
+  resize: both;
+}
+
 .signs {
   display: flex;
   justify-content: center;

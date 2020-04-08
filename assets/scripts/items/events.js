@@ -17,7 +17,8 @@ const onCreateItem = function (event) {
   const data = getFormFields(event.target)
   api.createItem(data)
     .then(ui.createItemSuccess)
-    .catch(ui.failure)
+    .catch(ui.failure,
+      $('#create-item').trigger('reset'))
 }
 
 // Deletes the list of signed-in user.

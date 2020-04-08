@@ -21,7 +21,7 @@ const showItemsSuccess = function (data) {
 const createItemSuccess = function (data) {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('List created Successfully!')
-  document.getElementById('create-item').reset()
+  $('#create-item').trigger('reset')
   $('#create-item').addClass('hide')
 }
 
@@ -60,7 +60,6 @@ const updateItemSuccess = function (data) {
 const failure = function (data) {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Uh! There is an error here! Please try again later :)')
-  document.getElementById('create-item').reset()
 }
 
 module.exports = {

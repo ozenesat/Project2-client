@@ -7,13 +7,15 @@ const store = require('../store')
 const signUpSuccess = function () {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Signed-up Successfully!')
-  document.getElementById('sign-up').reset()
+  // $('#sign-up')[0].reset()
+  $('#sign-up').trigger('reset')
+  // document.getElementById('sign-up').reset()
 }
 
 const signUpFailure = function () {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Error on Sing-up!')
-  document.getElementById('sign-up').reset()
+  $('#sign-up').trigger('reset')
 }
 
 const signInSuccess = function (data) {
@@ -26,13 +28,13 @@ const signInSuccess = function (data) {
   $('.item-group').removeClass('hide')
   $('.info').addClass('hide')
   store.user = data.user
-  document.getElementById('sign-in').reset()
+  $('#sign-in').trigger('reset')
 }
 
 const signInFailure = function () {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Error on Sign-in!')
-  document.getElementById('sign-in').reset()
+  $('#sign-in').trigger('reset')
 }
 
 const signOutSuccess = function () {
@@ -56,13 +58,13 @@ const signOutFailure = function () {
 const changePasswordSuccess = function () {
   $('.alert-success').removeClass('hide')
   $('.alert-success').text('Password changed Successfully!')
-  document.getElementById('change-password').reset()
+  $('#change-password').trigger('reset')
 }
 
 const changePasswordFailure = function () {
   $('.alert-danger').removeClass('hide')
   $('.alert-danger').text('Error on changing password!')
-  document.getElementById('change-password').reset()
+  $('#change-password').trigger('reset')
 }
 
 module.exports = {

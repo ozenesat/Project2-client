@@ -2,6 +2,7 @@
 
 body {
   background-image: url('https://pbs.twimg.com/media/DgJrYUEUcAA4nt-?format=jpg&name=4096x4096');
+  color: black;
   background-size: cover;
   min-height: 100vh;
   padding: 5rem 0 1rem;
@@ -18,7 +19,7 @@ section {
 }
 
 h1 {
-  color: #aaa;
+  color: #c2c3c5;
   font-family: 'Uncial Antiqua', cursive;
   margin: 60px 0 0;
   text-align: center;
@@ -81,14 +82,14 @@ section {
 }
 
 footer {
-  background-color: #6a675a;
+  background-color: #496870;
   bottom: 0;
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 19px;
   left: 0;
   margin-bottom: 0;
-  opacity: .75;
+  opacity: .65;
   position: fixed;
   right: 0;
 }

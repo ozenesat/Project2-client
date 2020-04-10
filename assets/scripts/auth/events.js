@@ -40,8 +40,10 @@ const onChangePassword = function (event) {
 
 // clear the user feedbacks.
 const clear = function () {
-  $('.alert-danger').addClass('hide')
-  $('.alert-success').addClass('hide')
+  setTimeout(() => {
+    $('.alert-danger').addClass('hide')
+    $('.alert-success').addClass('hide')
+  }, 3000)
 }
 
 module.exports = {

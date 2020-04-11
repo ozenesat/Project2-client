@@ -43,7 +43,7 @@ const clear = function () {
   setTimeout(() => {
     $('.alert-danger').addClass('hide')
     $('.alert-success').addClass('hide')
-  }, 3000)
+  }, 8888)
 }
 
 module.exports = {
